@@ -1,7 +1,7 @@
 {
 	"name": "@avratz/fp-toolkit-hono",
 	"description": "Functional programming oriented wrapper for Hono, providing helpers and a clean archetype for building type-safe APIs.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"keywords": [
 		"hono",
 		"functional-programming",
