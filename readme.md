@@ -213,17 +213,20 @@ route.post('/', validateJson(CreateUserBody), (c) =>
 src/
   app.ts
   routes.ts
-  user.controller.ts
-  user.service.ts
-  domain/
-    user.type.ts
-  port/
-    user-repository.port.ts
-  adapters/
-    user-repo.ts
+  user/
+
+    user.controller.ts
+    user.service.ts
+    domain/
+      user.type.ts
+      user.core.ts
+    port/
+      user-repository.port.ts
+    adapters/
+      user.repository.ts
 ```
 
-- **domain/**: types & schemas (pure)
+- **domain/**: types, schemas, core functions (pure)
 - **port/**: interfaces for external systems
 - **adapters/**: implementations (DB, HTTP clients, etc.)
 - **controllers**: wiring + http layer
