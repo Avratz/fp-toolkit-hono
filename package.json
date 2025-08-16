@@ -1,0 +1,43 @@
+{
+	"name": "@avratz/fp-toolkit-hono",
+	"description": "Functional programming oriented wrapper for Hono, providing helpers and a clean archetype for building type-safe APIs.",
+	"version": "1.0.0",
+	"keywords": [
+		"hono",
+		"functional-programming",
+		"fp",
+		"typescript",
+		"api",
+		"rest",
+		"toolkit",
+		"archetype",
+		"wrapper",
+		"helpers",
+		"clean-architecture",
+		"composable",
+		"light"
+	],
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"prepare": "tsc -p tsconfig.json"
+	},
+	"peerDependencies": {
+		"hono": "^4.9.0",
+		"zod": "^3.23.0",
+		"fp-ts": "^2.16.0"
+	},
+	"devDependencies": {
+		"typescript": "^5.4.0",
+		"hono": "^4.9.0",
+		"zod": "^3.23.0",
+		"fp-ts": "^2.16.0"
+	}
+}
